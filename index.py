@@ -25,8 +25,8 @@ def main():
         item_type = last_item["item_type"]
         if item_type == "text":
             print(last_item["text"])
-                bot.send_message(fetch_reply(item_type,52521), user_id, thread_id=item["thread_id"])
-                continue
+            bot.send_message(fetch_reply(item_type,52521), user_id, thread_id=item["thread_id"])
+            continue
         else:
             print(item_type)
 if __name__ == '__main__':
